@@ -1,6 +1,7 @@
 # Trading backtesting
 
 A program that tests four trading strategies on the SPY. Each is compared against buy and hold.
+Try running it yourself! Change start and end date, then the market in the settings section at the top. (Don't use for trading advice...)
 
 ## Requirements
 yfinance, pandas, matplotlib, numpy
