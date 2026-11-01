@@ -1,6 +1,6 @@
 # Trading backtesting
 
-A program that tests four rule-based trading strategies on the SPY price data. Each is compared against buy and hold.
+A program that tests four trading strategies on the SPY. Each is compared against buy and hold.
 
 ## Requirements
 yfinance, pandas, matplotlib, numpy
@@ -16,15 +16,15 @@ python qbot.py / python3 qbot.py
 
 ## How it works
 
-1. Downloads daily SPY prices from Yahoo Finance using `yfinance`
+1. Downloads daily SPY prices from Yahoo Finance using yfinance
 2. Each strategy decides each day how much of the portfolio to hold in SPY (0% to 100%), with rest as cash
 3. Starts with a given value (base is 10,000), goes through history and checks value of portfolio
 4. Reports total return, annual return, Sharpe ratio, and maximum drop, all compared to buy and hold
 
 ## Other information
 
-- Avoids lookahead bias. A signal computed from today's closing price is only traded the next day, since in real life you can't trade at a price you haven't seen
-- Miscelllanous costs. Every buy or sell is charged 0.1%, so strategies that trade often pay for it.
+- Avoids lookahead bias. A signal computed from today's closing price is only traded the next day, since in real life you can't trade at a price you haven't seen!
+- Miscellanous costs. Every buy or sell is charged 0.1%, so strategies that trade often pay for it.
 
 ## The strategies
 
